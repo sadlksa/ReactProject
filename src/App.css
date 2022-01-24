@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("Inter-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: "Inter-Light";
+  src: url("Inter-ExtraLight.otf");
+  font-weight: normal;
+  font-style: normal;
+  }
+  body{
+    background-color: rgb(0, 0, 0,0.8);
+  }
+.All{
+  display: flex;
+  flex-direction: row;
+}
+.leftcontainerloading{
+    color:white;
+    font-family:"Inter-Light"
+  }
+.loading{
+    color:white;
+    font-family:"Inter-Light"
+  }
+.index-page{
+  width: 95vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.left-container{
+  position: relative;
+  left: 3vw;
+  top: 5vh;
+  width:16vw;
+  height: 42vh;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5vh;
+}
+.editable-text{
+  color:grey;
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size: 18px;
+  font-family: "Inter-Medium";
+}
+.editable-text:focus{
+outline:none;
+}
+.dropdown-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+.products-dropdown:focus,.states-dropdown:focus,.city-dropdown:focus{
+  outline:none;
+}
+.products-dropdown,.states-dropdown,.city-dropdown{
+  background-color: rgb(255, 255, 255,0.1);
+  color:white;
+  border: none;
+  font-size: 16px;
+  width: 12vw;
+  height: 6vh;
+  border-radius: 5px;
+  font-family: "Inter-Medium";
+}
+.dropdown-element{
+  color:black
+}
+.right-container{
+  position: relative;
+  left: 6vw;
+  width: 75vw;
+}
+.title-subtitle-container{
+  display: flex;
+  flex-direction: column;
+}
+.title p{
+  font-size: 33px;
+  color: white;
+  font-family: "Inter-Medium";
+  font-weight: bold;
+  text-shadow: 2px 1px black;
+}
+.subtitle{
+  font-size: 23px;
+  color: grey;
+  font-family: "Inter-Medium";
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+.productsContainer{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.productName{
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid grey;
+  color:white;
+  font-size: 18px;
+  font-family: "Inter-Light";
+}
+.arrow{
+  color:white;
+  background-color: inherit;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  left:97.5%;
+  top:100px
+}
+.viewport{
+  width:100%;
+  height:fit-content;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.productsDetailsContainer{
+  width: inherit;
+  height:220px;
+  background-color: rgb(2,2,2);
+  display: flex;
+  flex-direction: row;
+  border-radius: 14px;
+  column-gap: 10px;
+  align-items: center;
+  transition-duration: 0.5ms ;
+  transition-timing-function: ease-in-out;
+}
+.inner{
+  min-width:30%;
+  max-width: 30%;
+  height: 80%;
+  background-color: rgb(255, 255, 255,0.05);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display:flex;
+  flex-direction: column;
+  animation-name: back;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 500ms;
+}
+.inner:hover{
+  animation-name: pop;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 500ms;
+}
+@keyframes pop {
+  0%{
+    min-width:30%;
+    height:80%
+  }
+  100%{
+    min-width:32%;
+    height:85%
+  }
+}
+@keyframes back {
+  0%{
+    min-width:32%;
+    height:85%
+  }
+  100%{
+    min-width:30%;
+    height:80%
+  }
+}
+.inside{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left:10px;
+}
+.names{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color:white;
+  font-size: 10px;
+  font-family: "Inter-Light";
+}
+.image{
+  position: relative;
+  top:10px;
+  width:80px;
+  height:80px;
+  border-radius: 5px;
+}
+.lower{
+  color:white;
+  font-size: 10px;
+  font-family: "Inter-Light";
+  position: relative;
+  left:10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width:95%;
+}
+.description{
+  color:white;
+  font-size: 10px;
+  font-family: "Inter-Light";
+  position: relative;
+  left: 10px;
+}
